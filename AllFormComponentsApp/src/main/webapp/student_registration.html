@@ -1,0 +1,131 @@
+<h1 style="color: red; text-align: center">Student Registration Details</h1>
+
+<form action="registrationutl" method="POST">
+   <table border="1" bgcolor="cyan" text-align="center">
+       <tr>
+           <td>Student Name : </td>
+           <td><input type="text" name="sname"></td>
+       </tr>
+       
+       <tr>
+           <td>Student Address : </td>
+           <td><textarea name="sadd" rows="5" cols="10">Enter Address </textarea></td>
+       </tr>
+       
+       <tr>
+          <td> Gender :: </td>
+          <td>
+             <input type="radio" name="gender" value="M" checked>Male &nbsp;
+             <input type="radio" name="gender" value="F">Female &nbsp;
+          </td>
+       </tr>
+       
+       <tr>
+          <td>Mobile Number </td>
+          <td> <input type="tel" name="contactNo">  </td>
+       </tr>
+       
+        <tr>
+        <td>Marital Status</td>
+        <td> <input type="checkbox" name="ms" value="Unmarried" checked>
+             <input type="checkbox" name="ms" value="married">   </td>
+       </tr>
+       
+       <tr>
+           <td>Email </td>
+          <td> <input type="email" name="email" value="xyz@gmail.com"> </td>
+       </tr>
+       
+       <tr>
+           <td>Qualification </td>
+          <td> 
+               <select name="qlfy">
+                  <option value=" ">---SELECT---</option>
+                  <option value="engg">B.E/B.Tech</option>
+                  <option value="medico">MBBS</option>
+                  <option value="arts">BA-MA</option>
+                  <option value="commerce">B.com/M.com/CA</option>
+               </select>
+           </td>
+       </tr>
+       
+       <tr>
+        <td>Hobbies </td>
+        <td>
+           <input type="checkbox" name="hb" value="reading" > Reading Books &nbsp; <br>
+           <input type="checkbox" name="hb" value="watching" checked> Watching TV &nbsp; <br>
+           <input type="checkbox" name="hb" value="roaming" > Travelling &nbsp; <br>
+           <input type="checkbox" name="hb" value="sports"> Playing Games
+        </td>
+       </tr>
+       
+       <tr>
+        <td> Favourite Colour</td>
+        <td>
+          <select name="favColors" multiple>
+              <option value="yellow">YELLOW</option>
+              <option value="red">RED</option>
+              <option value="blue">BLUE</option>
+              <option value="black">BLACK</option>
+              <option value="pink">PINK</option>
+          </select>
+        </td>
+       </tr>
+       
+       <tr>
+        <td>PetName</td>
+        <td>
+           <input type="password" name="petname">
+        </td>
+       </tr>
+       
+       <tr>
+        <td>DOB(Date Of Birth)</td>
+        <td>
+          <input type='date' name="dob">
+        </td>
+       </tr>
+       
+       <tr>
+        <td>TOB(Time Of Birth)</td>
+        <td>
+          <input type='time' name="tob">
+        </td>
+       </tr>
+       
+       <tr>
+        <td>MOB(Month Of Birth)</td>
+        <td>
+          <input type='month' name="mob">
+        </td>
+       </tr>
+       
+       <tr>
+        <td>WOB(Week Of Birth)</td>
+        <td>
+          <input type='week' name="wob">
+        </td>
+       </tr>
+       
+       <tr>
+        <td>Expected Salary(1L to 10L)</td>
+        <td>
+          <input type='range' name="sal" min="100000" max="1000000">
+        </td>
+       </tr>
+       
+       <tr>
+        <td>Google Search String</td>
+        <td>
+          <input type="search" name="ss">
+        </td>
+       </tr>
+       
+       <tr>
+        <td><input type="submit" value="register student" style="text-align: center"></td>
+        <td>
+          <input type="reset" name="cancel">
+        </td>
+       </tr>
+   </table>
+</form>

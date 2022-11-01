@@ -1,0 +1,12 @@
+
+<h1 style="color:blue; text-align: center">HTML to Servlet Communication using forms</h1>
+<script  src="js/validation.js">
+
+</script>
+
+<form action="formvalidation" method="GET" onsubmit="return validate(this)">
+   Person Name : <input type = "text" name="pname"> <span id="pnameErr" style='color:red'></span>  <br>
+   Person age : <input type = "text" name="page"> <span id="pageErr" style='color:red'></span> <br>
+   <input type="submit" value="Check Voting Elegibility">
+   <input type="hidden" name="vstatus" value="no" />
+</form>

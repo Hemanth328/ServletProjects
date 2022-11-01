@@ -1,0 +1,18 @@
+
+<h1 style="color:red; text-align:center">HTML to Servlet Communication Using JavaScript</h1>
+
+<form name="frm" action="capitalurl" method="GET">
+   Select country to get Capital : <select name="country" onchange="send()">
+                                      <option value="">-- Select----</option>
+                                      <option value="0">INDIA</option>
+                                      <option value="1">USA</option>
+                                      <option value="2">FRANCE</option>
+                                      <option value="3">CANADA</option>
+                                   </select>
+</form>
+
+<script language="javaScript">
+  function send() {
+	  frm.submit();
+  }
+</script>
