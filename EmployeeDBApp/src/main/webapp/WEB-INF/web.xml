@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
- <welcome-file-list>
-    <welcome-file>details_form.html</welcome-file>
+  <display-name>EmployeeDBApp</display-name>
+  <welcome-file-list>
+    <welcome-file>form.html</welcome-file>
   </welcome-file-list>
- 
+  
   <servlet>
-       <servlet-name>vote</servlet-name>
-       <servlet-class>com.hem.servlet.VoterServlet</servlet-class>
+     <servlet-name>emp</servlet-name>
+     <servlet-class>com.hem.servlet.EmployeeServlet</servlet-class>
   </servlet>
   
   <servlet-mapping>
-       <servlet-name>vote</servlet-name>
-       <url-pattern>/voterurl</url-pattern>
+     <servlet-name>emp</servlet-name>
+     <url-pattern>/empurl</url-pattern>
   </servlet-mapping>
 </web-app>
